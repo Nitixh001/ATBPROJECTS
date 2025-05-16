@@ -25,13 +25,9 @@ app.use((err,req,res,next)=>{
     res.status(500).json({error:"Something Unexpected happened"});
 });
 //server entry point
-// Handle both local + Render
-if (process.env.NODE_ENV !== "production") {
-  const PORT = process.env.PORT || 3700;
-  app.listen(PORT, () => {
-    console.log(`✅ Server running locally at http://localhost:${PORT}`);
-  });
-}
-
+const PORT = process.env.PORT || 3700;
+app.listen(PORT, () => {
+  console.log(`✅ Server running at http://localhost:${PORT}`);
+});
 // Export for Render
 module.exports = app;
