@@ -1,4 +1,9 @@
 {
+  "name": "atb-iii-project",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "body-parser": "^2.2.0",
